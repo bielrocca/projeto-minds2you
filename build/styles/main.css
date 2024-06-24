@@ -17,14 +17,15 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    padding: 6px 4%;
+    padding: 20px 4%;
     display: flex;
     margin-bottom: 20px;
     line-height: 40px;
     margin-left: 10px;
   }
-  body footer {
-    font-size: 12px;
+  body main {
+    max-width: 100%;
+    margin-left: 15%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -41,8 +42,9 @@ body {
     line-height: 40px;
     margin-left: 10px;
   }
-  body footer {
-    font-size: 12px;
+  body main {
+    max-width: 100%;
+    margin-left: 15%;
   }
 }
 @media (max-width: 767px) {
@@ -70,9 +72,6 @@ body {
   body main {
     max-width: 60%;
     margin-left: 38%;
-  }
-  body footer {
-    font-size: 10px;
   }
 }
 .content {
@@ -209,4 +208,16 @@ img {
 img:hover {
   scale: 1.04;
   transition: 0.5s;
+}
+.modal-body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-toggler {
+  background-color: #fff;
+  margin-right: 10px;
+}
+aside {
+  margin-bottom: 12px;
 }
