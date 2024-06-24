@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(82, 80, 80);
+    background-color: black;
     height: 100vh;
     
     @media @breakpointDesktop {
@@ -61,6 +61,12 @@ body {
     @media @breakpointMobile {
         header {
             height: 10.2%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .navegation ul {
+            padding-left: 10px;
         }
     
         .nav-link {
@@ -76,6 +82,11 @@ body {
             margin-bottom: 20px;
             line-height: 40px;
             margin-left: 10px;
+        }
+
+        main {
+            max-width: 60%;
+            margin-left: 38%;
         }
 
         footer {
@@ -156,6 +167,7 @@ nav.menu-lateral {
     overflow: hidden;
     transition: .5s;
     z-index: 1;
+    position: fixed;
 }
 
 .content > nav.menu-lateral.expandir {
@@ -228,22 +240,7 @@ textarea {
     resize: none;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(43, 43,43);
-    padding: 12px;
-    color: #fff;
-    font-size: 14px;
-}
-
 main {
-    background-color: black;
     color: #fff;
     width: 100%;
 }

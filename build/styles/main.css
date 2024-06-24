@@ -5,7 +5,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-color: #525050;
+  background-color: black;
   height: 100vh;
 }
 @media (min-width: 1024px) and (max-width: 1683px) {
@@ -48,6 +48,11 @@ body {
 @media (max-width: 767px) {
   body header {
     height: 10.2%;
+    display: flex;
+    justify-content: end;
+  }
+  body .navegation ul {
+    padding-left: 10px;
   }
   body .nav-link {
     display: flex;
@@ -61,6 +66,10 @@ body {
     margin-bottom: 20px;
     line-height: 40px;
     margin-left: 10px;
+  }
+  body main {
+    max-width: 60%;
+    margin-left: 38%;
   }
   body footer {
     font-size: 10px;
@@ -127,6 +136,7 @@ nav.menu-lateral {
   overflow: hidden;
   transition: 0.5s;
   z-index: 1;
+  position: fixed;
 }
 .content > nav.menu-lateral.expandir {
   width: 300px;
@@ -185,21 +195,7 @@ ul li.item-menu a .txt-link {
 textarea {
   resize: none;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #2b2b2b;
-  padding: 12px;
-  color: #fff;
-  font-size: 14px;
-}
 main {
-  background-color: black;
   color: #fff;
   width: 100%;
 }
