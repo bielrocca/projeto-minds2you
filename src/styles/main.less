@@ -21,8 +21,19 @@ body {
             width: 100%;
         }
     
-        ul li.item-menu a {
-            margin-bottom: 10px;
+        .navegation ul li.item-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 6px 4%;
+            display: flex;
+            margin-bottom: 20px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+        footer {
+            font-size: 12px;
         }
     }
 
@@ -31,14 +42,25 @@ body {
             height: 8.2%;
         }
     
-        ul li.item-menu a {
-            margin-bottom: 8px;
+        .navegation ul li.item-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 7px 4%;
+            display: flex;
+            margin-bottom: 20px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+        footer {
+            font-size: 12px;
         }
     }
 
     @media @breakpointMobile {
         header {
-            height: 10.3%;
+            height: 10.2%;
         }
     
         .nav-link {
@@ -74,6 +96,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 .nav .navbar-nav .nav-pills {
@@ -124,7 +147,7 @@ header {
     color: #fff;
 }
 
-.sideBar nav.menu-lateral {
+nav.menu-lateral {
     width: 120px;
     height: 100%;
     background-color: rgb(43, 43,43);
@@ -132,9 +155,10 @@ header {
 
     overflow: hidden;
     transition: .5s;
+    z-index: 1;
 }
 
-.sideBar nav.menu-lateral.expandir {
+.content > nav.menu-lateral.expandir {
     width: 300px;
 }
 
@@ -168,7 +192,7 @@ header {
     background-color: red;
 }
 
-.navegation ul li.item-menu a {
+ul li.item-menu a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -185,7 +209,7 @@ ul li.item-menu a .txt-link {
     opacity: 0;
 }
 
-.sideBar nav.menu-lateral.expandir .txt-link {
+.menu-lateral.expandir .txt-link {
     margin-left: 10px;
     opacity: 1;
 }
@@ -216,5 +240,25 @@ footer {
     padding: 12px;
     color: #fff;
     font-size: 14px;
+}
+
+main {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+}
+
+section {
+    margin-top: 60px;
+}
+
+img {
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.04;
+        transition: .5s;
+    }
 }
 

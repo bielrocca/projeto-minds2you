@@ -27,65 +27,179 @@
 <body>
 
         <div class="content">
-            <div class="sideBar">
-                <nav class="menu-lateral">
-                    <div class="btn-expandir">
-                        <i class="bi bi-list" id="btn-exp"></i>
+            <nav class="menu-lateral">
+                <div class="btn-expandir">
+                    <i class="bi bi-list" id="btn-exp"></i>
+                </div>
+        
+                <div class="navegation">
+                    <ul>
+                        <li class="item-menu ativo">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-shop"></i></span>
+                                <button class="txt-link active nav-link" data-bs-toggle="tab" data-bs-target="#inicio">Inicio</button>
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-star"></i></span>
+                                <span class="txt-link" id="destaque" data-bs-toggle="tab" data-bs-target="#destaque">Destaques</span>
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-book"></i></span>
+                                <span class="txt-link" id="cardapio">Cardapio</span>
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-cup-hot"></i></span>
+                                <span class="txt-link" id="cafe">Coffe</span>
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-journal"></i></span>
+                                <span class="txt-link" id="agenda">Agenda</span>
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-gear"></i></span>
+                                <span class="txt-link" id="agenda">Configuração</span>
+                            </a>
+                        </li>
+                        <li class="item-menu">
+                            <a href="#">
+                                <span class="icon"><i class="bi bi-person-circle"></i></span>
+                                <span class="txt-link" id="agenda">Conta</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <p>Versao 1</p>
+                    <button class="btn btn-dark ">Avaliar</button>
+                </div>
+            </nav>
+            <main>
+                <section class="pt-4 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="section-title text-center mb-4">
+                                Inicio
+                            </h2>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Inicio">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="coca-cola">
+                                            <h5 class="fw-bold text-colored mt-2">Espaço</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="suco de laranja">
+                                            <h5 class="fw-bold text-colored mt-2">Musicas</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="coca-cola">
+                                            <h5 class="fw-bold text-colored mt-2">Recepção</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="coca-cola">
+                                            <h5 class="fw-bold text-colored mt-2">Recepção</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="destaque">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/bebidas/cerveja.jpg " alt="cerveja">
+                                            <h5 class="fw-bold text-colored mt-2">Cerveja</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/bebidas/vinho.jpg " alt="vinho">
+                                            <h5 class="fw-bold text-colored mt-2">Vinho</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="entradas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/entradas/entrada.jpg " alt="nome da entrada">
+                                            <h5 class="fw-bold text-colored mt-2">Entrada</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/entradas/entrada.jpg " alt="entrada">
+                                            <h5 class="fw-bold text-colored mt-2">Vinho</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="pratos-principais">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/pratos/pizza.jpg " alt="pizza">
+                                            <h5 class="fw-bold text-colored mt-2">Pizza</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/pratos/salmao.jpg " alt="salmao">
+                                            <h5 class="fw-bold text-colored mt-2">Salmao grelhado</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="sobremesas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/sobremesas/bolo.jpg " alt="bolo">
+                                            <h5 class="fw-bold text-colored mt-2">Bolo de chocolate</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="img/cardapio/sobremesas/cupcake.jpg " alt="cupcake">
+                                            <h5 class="fw-bold text-colored mt-2">Cupcake</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            
-                    <div class="navegation">
-                        <ul>
-                            <li class="item-menu ativo">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-shop"></i></span>
-                                    <span class="txt-link">Inicio</span>
-                                </a>
-                            </li>
-                            <li class="item-menu">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-star"></i></span>
-                                    <span class="txt-link" id="destaque">Destaques</span>
-                                </a>
-                            </li>
-                            <li class="item-menu">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-book"></i></span>
-                                    <span class="txt-link" id="cardapio">Cardapio</span>
-                                </a>
-                            </li>
-                            <li class="item-menu">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-cup-hot"></i></span>
-                                    <span class="txt-link" id="cafe">Coffe</span>
-                                </a>
-                            </li>
-                            <li class="item-menu">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-journal"></i></span>
-                                    <span class="txt-link" id="agenda">Agenda</span>
-                                </a>
-                            </li>
-                            <li class="item-menu">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-gear"></i></span>
-                                    <span class="txt-link" id="agenda">Configuração</span>
-                                </a>
-                            </li>
-                            <li class="item-menu">
-                                <a href="#">
-                                    <span class="icon"><i class="bi bi-person-circle"></i></span>
-                                    <span class="txt-link" id="agenda">Conta</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer">
-                        <p>Versao 1</p>
-                        <button class="btn btn-dark ">Avaliar</button>
-                    </div>
-                </nav>
-            </div>
-            
+                </section>
+            </main>
             <header>
                 <div class="btn-group">
                     <button class="btn btn-secondary">
@@ -113,56 +227,9 @@
                         <ul class="nav navbar-nav nav-pills">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#atendimento" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-bell"></i> Atendimento</a>
-                                <div class="modal" id="modal" data-bs-backdrop="static">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5>Atendimento via email</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label class="form-label fw-bold text-colored" for="nome">Seu nome:</label>
-                                                        <input class="form-control" type="text" id="nome" required>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label fw-bold text-colored" for="email">Seu email:</label>
-                                                        <input class="form-control" type="email" id="email" required>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label fw-bold text-colored" for="telefone">Seu telefone:</label>
-                                                        <input class="form-control" type="tel" id="telefone" required>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label fw-bold text-colored" for="mensagem">Sua mensagem:</label>
-                                                        <textarea class="form-control" id="mensagem" required></textarea>
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  active" href="#carteira" data-bs-toggle="modal" data-bs-target="#modal2"><i class="bi bi-wallet"></i> Carteira</a>
-                                <div class="modal" id="modal2" data-bs-backdrop="static">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5>Carteira</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    Saldo atual: R$0,00
-                                                </p>
-                                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Adicionar saldo</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  active" href="#carrinho"><i class="bi bi-cart"></i> Carrinho</a>
@@ -171,6 +238,54 @@
                     </nav>
                 </div>
             </header>
+            
+            <div class="modal" id="modal" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Atendimento via email</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold text-colored" for="nome">Seu nome:</label>
+                                    <input class="form-control" type="text" id="nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold text-colored" for="email">Seu email:</label>
+                                    <input class="form-control" type="email" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold text-colored" for="telefone">Seu telefone:</label>
+                                    <input class="form-control" type="tel" id="telefone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold text-colored" for="mensagem">Sua mensagem:</label>
+                                    <textarea class="form-control" id="mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal2" data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Carteira</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Saldo atual: R$0,00
+                            </p>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Adicionar saldo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             &copy; 2024 - Todos os Direitos Reservados | Gabriel
