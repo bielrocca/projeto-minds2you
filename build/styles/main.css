@@ -8,6 +8,44 @@ body {
   background-color: #525050;
   height: 100vh;
 }
+@media (min-width: 1024px) and (max-width: 1683px) {
+  body header {
+    height: 8.3%;
+    width: 100%;
+  }
+  body ul li.item-menu a {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body header {
+    height: 8.2%;
+  }
+  body ul li.item-menu a {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  body header {
+    height: 10.3%;
+  }
+  body .nav-link {
+    display: flex;
+  }
+  body .navegation ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    margin-left: 10px;
+  }
+  body footer {
+    font-size: 10px;
+  }
+}
 .content {
   height: 100vh;
   display: flex;
@@ -60,7 +98,7 @@ header {
 .nav-link {
   color: #fff;
 }
-nav.menu-lateral {
+.sideBar nav.menu-lateral {
   width: 120px;
   height: 100%;
   background-color: #2b2b2b;
@@ -68,7 +106,7 @@ nav.menu-lateral {
   overflow: hidden;
   transition: 0.5s;
 }
-nav.menu-lateral.expandir {
+.sideBar nav.menu-lateral.expandir {
   width: 300px;
 }
 .btn-expandir {
@@ -95,7 +133,7 @@ nav.menu-lateral.expandir {
 .navegation ul li.ativo {
   background-color: red;
 }
-ul li.item-menu a {
+.navegation ul li.item-menu a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -110,7 +148,7 @@ ul li.item-menu a .txt-link {
   transition: 0.5s;
   opacity: 0;
 }
-nav.menu-lateral.expandir .txt-link {
+.sideBar nav.menu-lateral.expandir .txt-link {
   margin-left: 10px;
   opacity: 1;
 }
@@ -137,32 +175,4 @@ footer {
   padding: 12px;
   color: #fff;
   font-size: 14px;
-}
-@media (max-width: 767px) {
-  header {
-    height: 8.2%;
-  }
-  .nav-link {
-    display: flex;
-  }
-  ul li.item-menu a {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  header {
-    height: 8.2%;
-  }
-  ul li.item-menu a {
-    margin-bottom: 8px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1683px) {
-  header {
-    height: 8.3%;
-    width: 100%;
-  }
-  ul li.item-menu a {
-    margin-bottom: 10px;
-  }
 }
