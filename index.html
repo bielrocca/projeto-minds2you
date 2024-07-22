@@ -38,43 +38,43 @@
                         <li class="item-menu ativo">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-shop"></i></span>
-                                <span class="txt-link active" data-bs-toggle="tab" data-bs-target="#inicio">Inicio</span>
+                                <span class="txt-link active" data-tab-button="inicio">Inicio</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-star"></i></span>
-                                <span class="txt-link" id="destaque" data-bs-toggle="tab" data-bs-target="#destaque">Destaques</span>
+                                <span class="txt-link" id="destaque" data-tab-button="destaque">Destaques</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-book"></i></span>
-                                <span class="txt-link" id="cardapio">Cardapio</span>
+                                <span class="txt-link" id="cardapio" data-tab-button="cardapio">Cardapio</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-cup-hot"></i></span>
-                                <span class="txt-link" id="cafe">Coffe</span>
+                                <span class="txt-link" id="cafe" data-tab-button="coffe">Coffe</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-journal"></i></span>
-                                <span class="txt-link" id="agenda">Agenda</span>
+                                <span class="txt-link" id="agenda" data-tab-button="agenda">Agenda</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-gear"></i></span>
-                                <span class="txt-link" id="agenda">Configuração</span>
+                                <span class="txt-link" id="agenda" data-tab-button="configuração">Configuração</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-person-circle"></i></span>
-                                <span class="txt-link" id="agenda">Conta</span>
+                                <span class="txt-link" id="agenda" data-tab-button="conta">Conta</span>
                             </a>
                         </li>
                     </ul>
@@ -86,7 +86,7 @@
             </nav>
             <main>
                 <section class="pt-4 pb-5">
-                    <div class="container">
+                    <div class="container active" data-tab-id="inicio">
                         <div class="row">
                             <h2 class="section-title text-center mb-4">
                                 Inicio
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container" data-tab-id="destaque">
                         <div class="row">
                             <h2 class="text-center mb-4 mt-4">
                                 Destaque
