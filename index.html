@@ -38,13 +38,13 @@
                         <li class="item-menu ativo">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-shop"></i></span>
-                                <span class="txt-link active" data-tab-button="inicio">Inicio</span>
+                                <span class="txt-link active" data-bs-toggle="tab" data-bs-target="#inicio">Inicio</span>
                             </a>
                         </li>
                         <li class="item-menu">
                             <a href="#">
                                 <span class="icon"><i class="bi bi-star"></i></span>
-                                <span class="txt-link" id="destaque" data-tab-button="destaque">Destaques</span>
+                                <span class="txt-link" data-bs-toggle="tab" data-bs-target="#destaque">Destaques</span>
                             </a>
                         </li>
                         <li class="item-menu">
@@ -86,13 +86,13 @@
             </nav>
             <main>
                 <section class="pt-4 pb-5">
-                    <div class="container active" id="inicio">
-                        <div class="row">
-                            <h2 class="section-title text-center mb-4">
-                                Inicio
-                            </h2>
-                            <div class="tab-content">
-                                <div class="tab-pane">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="inicio">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="section-title text-center mb-4">
+                                        Inicio
+                                    </h2>
                                     <div class="row">
                                         <div class="col-md-3">
                                             <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="coca-cola">
@@ -127,88 +127,90 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container" data-tab-id="destaque">
-                        <div class="row">
-                            <h2 class="text-center mb-4 mt-4">
-                                Destaque
-                            </h2>
-                            <aside class="col-md-2">
-                                <nav class="nav nav-pills flex-column nav-cardapio">
-                                    <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-casa" class="fw-bold text-start nav-link text-colored active">Pratos da Casa</button>
-                                    <button type="button" data-bs-toggle="tab" data-bs-target="#doces-especiais" class="fw-bold text-start nav-link text-colored">Doces Especiais</button>
-                                </nav>
-                            </aside>
-                            <div class="col-md-10">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="pratos-casa">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-1">
-                                                <h5 class="fw-bold text-colored mt-2">Prato 1</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-1">Pedir</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-2">
-                                                <h5 class="fw-bold text-colored mt-2">Prato 2</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-2">Pedir</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-3">
-                                                <h5 class="fw-bold text-colored mt-2">Prato 3</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-3">Pedir</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-4">
-                                                <h5 class="fw-bold text-colored mt-2">Prato 4</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-4">Pedir</button>
+                    <div class="container tab-content">
+                        <div class="tab-pane" id="destaque">
+                            <div class="row">
+                                <h2 class="text-center mb-4 mt-4">
+                                    Destaque
+                                </h2>
+                                <aside class="col-md-2">
+                                    <nav class="nav nav-pills flex-column nav-cardapio">
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-casa" class="fw-bold text-start nav-link text-colored active">Pratos da Casa</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#doces-especiais" class="fw-bold text-start nav-link text-colored">Doces Especiais</button>
+                                    </nav>
+                                </aside>
+                                <div class="col-md-10">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="pratos-casa">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-1">
+                                                    <h5 class="fw-bold text-colored mt-2">Prato 1</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-1">Pedir</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-2">
+                                                    <h5 class="fw-bold text-colored mt-2">Prato 2</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-2">Pedir</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-3">
+                                                    <h5 class="fw-bold text-colored mt-2">Prato 3</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-3">Pedir</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-4">
+                                                    <h5 class="fw-bold text-colored mt-2">Prato 4</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-prato-4">Pedir</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane" id="doces-especiais">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-1">
-                                                <h5 class="fw-bold text-colored mt-2">Doce 1</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-1">Pedir</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-2">
-                                                <h5 class="fw-bold text-colored mt-2">Doce 2</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-2">Pedir</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-3">
-                                                <h5 class="fw-bold text-colored mt-2">Doce 3</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-3">Pedir</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-4">
-                                                <h5 class="fw-bold text-colored mt-2">Doce 4</h5>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                                </p>
-                                                <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-4">Pedir</button>
+                                        <div class="tab-pane" id="doces-especiais">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-1">
+                                                    <h5 class="fw-bold text-colored mt-2">Doce 1</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-1">Pedir</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-2">
+                                                    <h5 class="fw-bold text-colored mt-2">Doce 2</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-2">Pedir</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-3">
+                                                    <h5 class="fw-bold text-colored mt-2">Doce 3</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-3">Pedir</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img class="d-block w-100" src="https://via.placeholder.com/50x50" alt="item-4">
+                                                    <h5 class="fw-bold text-colored mt-2">Doce 4</h5>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    </p>
+                                                    <button class="btn btn-primary mb-4" data-bs-toggle="modal" data-bs-target="#pedido-doce-4">Pedir</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
